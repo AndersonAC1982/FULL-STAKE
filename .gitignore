@@ -1,3 +1,4 @@
+
 # Ignora arquivos do sistema 
 *.log 
 *.tmp 
@@ -7,12 +8,18 @@ Thumbs.db
 # Pastas do Windows e OneDrive 
 AppData/ 
 OneDrive/ 
-Configura‡äes Locais/ 
+Configuraï¿½ï¿½es Locais/ 
 Cookies/ 
 Recent/ 
 Desktop.ini 
  
-# Node e dependˆncias (se usar) 
+# Node e dependï¿½ncias (se usar) 
 node_modules/ 
 dist/ 
 .env
+
+/.vscode
+/Cronograma Full Satake.docx
+/README.md
+/SequÃªncia de Estudos por SeÃ§Ãµes do Curso.docx
+
