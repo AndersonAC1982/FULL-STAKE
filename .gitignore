@@ -1,0 +1,25 @@
+
+# Ignora arquivos do sistema 
+*.log 
+*.tmp 
+.DS_Store 
+Thumbs.db 
+ 
+# Pastas do Windows e OneDrive 
+AppData/ 
+OneDrive/ 
+Configura��es Locais/ 
+Cookies/ 
+Recent/ 
+Desktop.ini 
+ 
+# Node e depend�ncias (se usar) 
+node_modules/ 
+dist/ 
+.env
+
+/.vscode
+/Cronograma Full Satake.docx
+/README.md
+/Sequência de Estudos por Seções do Curso.docx
+
