@@ -1,0 +1,21 @@
+let valor // nao inicializada
+console.log(valor) // undefined
+
+valor = null // ausencia de valor
+console.log(valor) // null
+// console.log(valor.toString()) // erro: TypeError: Cannot read properties of null (reading 'toString')
+
+const produto = {}
+console.log(produto.preco) // undefined
+console.log(produto) // {}
+
+produto.preco = 3.50
+console.log(produto) // { preco: 3.5 }
+
+produto.preco = undefined // evitar atribuir undefined
+console.log(produto) // { preco: undefined }
+delete produto.preco // deletando o atributo preco
+console.log(produto) // {}
+
+produto.preco = null // sem preco
+console.log(produto) // { preco: null }
