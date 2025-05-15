@@ -1,0 +1,6 @@
+C:\Users\aaparecido\OneDrive\Área de Trabalho\Anderson\CURSOS\FULL STAKE\CRUDPasso_Passo\ProdutoAPI\obj\Debug\net8.0\ProdutoAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aaparecido\OneDrive\Área de Trabalho\Anderson\CURSOS\FULL STAKE\CRUDPasso_Passo\ProdutoAPI\obj\Debug\net8.0\ProdutoAPI.AssemblyInfoInputs.cache
+C:\Users\aaparecido\OneDrive\Área de Trabalho\Anderson\CURSOS\FULL STAKE\CRUDPasso_Passo\ProdutoAPI\obj\Debug\net8.0\ProdutoAPI.AssemblyInfo.cs
+C:\Users\aaparecido\OneDrive\Área de Trabalho\Anderson\CURSOS\FULL STAKE\CRUDPasso_Passo\ProdutoAPI\obj\Debug\net8.0\ProdutoAPI.csproj.CoreCompileInputs.cache
+C:\Users\aaparecido\OneDrive\Área de Trabalho\Anderson\CURSOS\FULL STAKE\CRUDPasso_Passo\ProdutoAPI\obj\Debug\net8.0\ProdutoAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aaparecido\OneDrive\Área de Trabalho\Anderson\CURSOS\FULL STAKE\CRUDPasso_Passo\ProdutoAPI\obj\Debug\net8.0\ProdutoAPI.sourcelink.json
