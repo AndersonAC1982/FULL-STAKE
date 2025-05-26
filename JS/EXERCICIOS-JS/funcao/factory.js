@@ -28,3 +28,13 @@ export function criarPessoa({ nome, sobrenome, idade }) {
 }
 console.log(criarPessoa({ nome: 'Maria', sobrenome: 'Oliveira', idade: 28 })) // { nome: 'Maria', sobrenome: 'Oliveira', idade: 28 }
 // factory com valores default
+
+function criarProduto(nome, preco){
+    return{
+        nome: nome,
+        preco: preco
+    }
+}
+
+console.log(criarProduto('ipode' , 25.00))
+console.log(criarProduto('Notebook', 2500.00))
