@@ -4,6 +4,7 @@
     console.log('Foge do ewcopo mais abrangente' ); // imprime o nome
 })(); // chama a função imediatamente
 
+
 // Exemplo de IIFE com parâmetros
 (function(nome) {
     console.log(`Meu nome é ${nome}`); // imprime o nome passado como parâmetro
