@@ -1,10 +1,10 @@
 <h1> Projeto </h1>
 <ul class="tree">
     <li>
-        back -end
+       <span wm-folder>back-end</span> 
         <ul>
             <li>
-                app
+                <span wm-folder>app</span> 
                 <ul>
                     <li>Configuração</li>
                     <li>Rotas</li>
@@ -13,7 +13,7 @@
                 </ul>
             </li>
             <li>
-                banco de dados
+                 <span wm-folder>banco de dados</span> 
                 <ul>
                     <li>Configuração</li>
                     <li>Modelos</li>
@@ -21,10 +21,10 @@
                 </ul>
             </li>
             <li>
-                front-end
+                <span wm-folder> front-end</span> 
                 <ul>
                     <li>
-                        public
+                        <span wm-folder>public</span> 
                         <ul>
                             <li>CSS</li>
                             <li>JS</li>
@@ -38,3 +38,16 @@
 </ul>
 
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+<!--JavaScript para interatividade da lista aninhada-->
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none'
+            console.log(ul)
+        }
+    })
+          
+</script>
