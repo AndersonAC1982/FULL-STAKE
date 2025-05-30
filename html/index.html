@@ -1,33 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Define que o documento está usando HTML5 -->
+<html lang="en"> <!-- Começa o HTML e define o idioma como inglês -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícios HTML</title>
+    <meta charset="UTF-8"> <!-- Usa codificação de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade: adapta para dispositivos móveis -->
+    <title>Exercícios HTML</title> <!-- Título da aba no navegador -->
+    
+    <!-- Estilo direto na página (CSS) -->
+    <style>
+        #conteudo { /* Seleciona o elemento com id="conteudo" */
+            padding: 30px 0px; /* Espaçamento acima e abaixo: 30px, nas laterais: 0 */
+        }
+    </style>
 </head>
-<body>
+<body> <!-- Começa o corpo da página -->
+
+    <!-- Cabeçalho com o título principal -->
     <header>
        <h1>Exercícios HTML</h1> 
     </header>
+
+    <!-- Navegação com 3 links para exercícios -->
     <nav>
-        <a href="exercicios/teste.html">00 - Teste</a>
+        <a href="exercicios/teste.html">00 - Teste</a> |
+        <a href="exercicios/texto1.html">01 - Texto1</a> |
+        <a href="exercicios/texto2.html">02 - Texto2</a> |
+        <a href="exercicios/listas.html">03 - Listas</a> |
+        <a href="exercicios/listaAninhada.html">04 - Lista Aninhada</a> 
     </nav>
+
+    <!-- Seção onde o conteúdo dos links será carregado -->
     <section id="conteudo"></section>
+
+    <!-- Rodapé com o nome do curso -->
     <footer>
-        <br>
         Curso de Web Moderno
     </footer>
+
+    <!-- Script JavaScript para carregar os arquivos sem recarregar a página -->
     <script>
+        // Seleciona todos os links <a> da página
         document.querySelectorAll('a').forEach(link => {
-           const conteudo = document.getElementById('conteudo') 
-           
-           link.onclick = function(e) {
-                e.preventDefault()
+            // Pega a seção onde o conteúdo será exibido
+            const conteudo = document.getElementById('conteudo');
+
+            // Quando clicar no link...
+            link.onclick = function(e) {
+                e.preventDefault(); // Impede o carregamento padrão do link
+
+                // Busca o conteúdo do arquivo HTML apontado no href do link
                 fetch(link.href)
-                .then(resp => resp.text())
-                .then(html => conteudo.innerHTML = html)
-            }
-        })
+                    .then(resp => resp.text()) // Converte a resposta em texto (HTML)
+                    .then(html => conteudo.innerHTML = html); // Coloca o HTML dentro da seção
+            };
+        });
     </script>
 </body>
 </html>
