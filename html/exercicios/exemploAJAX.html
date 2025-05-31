@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo AJAX com Fetch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #usuarios {
+      margin-top: 20px;
+    }
+    .usuario {
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lista de Usuários (via AJAX)</h1>
+  <button onclick="carregarUsuarios()">Carregar Usuários</button>
+
+  <div id="usuarios"></div>
+
+  <script>
+    function carregarUsuarios() {
+      // Fazendo uma requisição AJAX usando fetch
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then(resposta => resposta.json()) // converte para JSON
+        .then(dados => {
+          const container = document.getElementById("usuarios");
+          container.innerHTML = ""; // Limpa antes de preencher
+
+          // Para cada usuário recebido, cria um bloco de HTML
+          dados.forEach(usuario => {
+            const div = document.createElement("div");
+            div.className = "usuario";
+            div.innerHTML = `<strong>${usuario.name}</strong><br>Email: ${usuario.email}<br>Telefone: ${usuario.phone}`;
+            container.appendChild(div);
+          });
+        })
+        .catch(erro => {
+          console.error("Erro ao buscar usuários:", erro);
+        });
+    }
+  </script>
+
+</body>
+</html>

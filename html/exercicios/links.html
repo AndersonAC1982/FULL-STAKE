@@ -1,1 +1,34 @@
 <h1>Links</h1>
+
+<p>Este é um exemplo de links em HTML.</p>
+<p>Para criar links em HTML, usamos a tag <code>&lt;a&gt;</code>. O atributo <code>href</code> define o destino do link.</p>
+<p>Veja alguns exemplos:</p>
+
+<!-- URL Absoluta: link com texto padrão -->
+ <p>URL Absoluta: link com texto padrão </p>
+<a id="início" href="https://www.google.com">Google</a><br>
+<a href="https://www.google.com.br"target="_blank">Google</a><br><br>
+
+<!-- URL Absoluta com texto personalizado: o texto clicável é diferente -->
+<p>URL Absoluta com texto personalizado: o texto clicável é diferente </p>
+<a href="https://www.google.com.br">Google 1</a><br>
+<a href="https://www.google.com.br"target="_blank"> Google 2 </a>
+
+<!--URL Realtiva-->
+<p>URL Relativa: link para uma página interna</p>
+<a href="index.html">Página Inicial</a><br>
+<a href="/index.html">Página Inicial (raiz)</a><br>
+<a href="../index.html">Página Inicial (diretório acima)</a><br><br>
+
+<!-- Email: link que abre o cliente de email -->
+<p>Email: link que abre o cliente de email</p>
+<a href="mailto:locofopho.ac@gmail.com">Entre em contato</a><br>
+
+<!-- link para voltar ao topo da página -->
+<p>Link para voltar ao topo da página</p>
+<div id="noticia"  style="position:absolute;top: 2000px;">
+    <h1>Notícia Importante</h1>
+    <p>Esta é uma notícia importante que você deve ler.</p>
+    <a href="#início">Volta ao início</a>
+</div>
+<a href="#noticia">Leia a notícia importante</a><br>

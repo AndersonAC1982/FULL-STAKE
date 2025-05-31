@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--tabela.html-->
+<table >
+   <caption>Lista Compras</caption><!-- Título da tabela -->
+    <thead><!-- Cabeçalho da tabela -->
+        <tr><!-- Linha do cabeçalho -->
+            <th>Produto</th><!-- Coluna de produtos -->
+            <th>Valor</th><!-- Coluna de valor -->
+            <th>Quantidade</th><!-- Coluna de quantidade -->
+            <th>Total</th><!-- Coluna de total -->
+        </tr>
+    </thead>
+    <tbody> <!-- Corpo da tabela -->
+        <tr>
+            <td>Arroz</td><!-- Linha de dados -->
+            <td>R$ 5,00</td>
+            <td>2</td>
+            <td>R$ 10,00</td>
+        </tr>
+        <tr>
+            <td>Feijão</td>
+            <td>R$ 4,00</td>
+            <td>3</td>
+            <td>R$ 12,00</td>
+        </tr>
+        <tr>
+            <td>Macarrão</td>
+            <td>R$ 3,00</td>
+            <td>5</td>
+            <td>R$ 15,00</td>
+        </tr>
+        </tbody>
+        <tfoot><!-- Rodapé da tabela -->
+            <tr>
+                <td colspan="3" rowspan="2">Total Geral</td><!-- Mescla 3 colunas e 2 linhas -->  
+                <td>R$ 37,00</td><!-- Total geral -->
+            </tr>
+            <tr>
+                <td>R$ 37,00</td>
+
+</table>
+
+<style> /*Estilos CSS para a tabela */
+    table {
+        border-collapse: collapse; /*Colapsa as bordas da tabela */
+            }
+    th, td { /*Estilos para cabeçalhos e células */
+        padding: 10px;  /* Espaçamento interno */
+    }
+
+    thead tr { /* Estilos para a linha do cabeçalho */
+        
+        border-bottom: solid 3px #444; /*Borda inferior */
+    }
+
+    tbody tr:hover {/*Efeito hover para linhas do corpo */
+        background-color: #dedede;
+    }
+
+    tfoot{
+        background-color: #444; /* Cor de fundo do rodapé */
+        color: #fff; /* Texto em negrito */
+    }
+</style>
