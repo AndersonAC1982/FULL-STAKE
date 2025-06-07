@@ -6,7 +6,81 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* Universal*/
+        *{
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        /* tag*/
+        .tag{
+                color: #ff0;
+            background-color: #f77;
+        }
+
+        /* #*/
+        #aproavados{
+                color: #ff0;
+            background-color: #f77;
+        }
+
+        /* aninhado > Elemento*/
+        #aninhado > div{
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        /*aninhado direto*/
+        #aninhado section {
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        /* adjacente*/
+          p + ul {
+            color: #ff0;
+            background-color: #f77;
+        }
+
+         p ~ ol {
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        /* atribulto*/
+        /*[feira~=escritorio]*/
+        /*[feira*=asa]*/
+        [feira~=escritorio] {
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        /*filhos*/
+        span:nth-child(1){
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        section > :nth-child(odd){
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        section > :nth-child(even){
+            color: #ff0;
+            background-color: #f77;
+        }
+
+         section > :nth-child(odd), ul {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* tipo*/
+        section > span:nth-of-type(2) {
+            color: #ff0;
+            background-color: #f77;
+        }
+
     </style>
 </head>
 
